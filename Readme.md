@@ -1,13 +1,11 @@
-1. Hough_Transform.py
+Hough_Transform.py
 
 This file has the code for detecting circles in a given image using Hough Transform.
 The Radius range can be changed and adjusted as per need in order to improve the performance of the program
 
-2. Randomized_Circle_Detection.py
+Use (circle[0],circle[1]) as (x,y) of centers and circle[2] as radius.
 
-This file is basically the implementation of the Algorithm given in the Reference paper given in the repository.
-Please note that not all the thresholds given in the reference paper have been used to detect the circle.
+The output images are only for visualizaions. Delete these codes before implementing on the Pi.
 
-Feel free to contribute to codes given.
+-Siyuan 
 
-Happy coding! :)
