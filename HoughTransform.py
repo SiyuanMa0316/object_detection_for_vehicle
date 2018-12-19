@@ -1,13 +1,18 @@
+#encoding:utf-8
 import cv2
-def recog()
+import TraceControl
+
+cam = cv2.VideoCapture(0)
+
+def recog():
     _, img = cam.read()
 
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # 输出图像大小
-    print(img.shape)
+    #print(img.shape)
     circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 1, 100, param1=100, param2=30, minRadius=5, maxRadius=300)
-    print(circles)
-    print(len(circles[0]))
+    #print(circles)
+    #print(len(circles[0]))
 
     circle = circles[0]
     x = int(circle[0])
@@ -27,3 +32,7 @@ def recog()
 
     cv2.imshow('res', img)
     return [x,y,r]
+
+#if __name__ =='__main__':
+ #   while True:
+  #      recog()
